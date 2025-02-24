@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    background-color: #EDEADA;
+}
+
+.box-button {
+    width: 250px;
+    border: 1px solid #000000;
+    font-size: 28px;
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-button img {
+    margin-right: 10px;
+}
+
+/*____________NAVBAR STYLE___________*/
+.navbar {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    border-bottom: 2px solid #000000;
+}
+
+.navbar .name {
+    margin: 0;
+    margin-right: auto;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.navbar a {
+    padding: 5px 10px;
+    font-size: 28px;
+}
+
+/*____________ABOUT STYLE____________*/
+.about-section {
+    display: flex;
+    padding: 1% 4% 0 0;
+    height: 80vh;
+}
+
+/*--------left--------*/
+.technologies {
+    flex-basis: 60%;
+    flex-shrink: 0;
+}
+
+.technologies .title {
+    font-size: 48px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.tech-box {
+    height: 120px;
+    width: 150px;
+    border: 1px solid #000000;
+    box-shadow: 4px 4px 4px #00000040;
+    padding-top: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/*--------right-------*/
+.about-me .title {
+    margin: 10% 0;
+    font-size: 56px;
+    font-weight: 400;
+    text-decoration: underline;
+    background: linear-gradient(to right, red, blue);
+    background-clip: text;
+    color: transparent;
+}
+
+.about-me .about-text {
+    margin: 10% 0;
+    font-size: 28px;
+}
+
+.about-me a {
+    margin-top: 2%;
+}
+/*___________PROJECTS STYLE__________*/
+/*____________CONTACT STYLE__________*/
+/*____________FOOTER STYLE___________*/
