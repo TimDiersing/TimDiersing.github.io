@@ -7,24 +7,26 @@
         <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="navbar">
+        <header id="navbar">
             <h3 class="name">Timothy Diersing</h3>
-            <a>About</a>
-            <a>Projects</a>
-            <a>Contact</a>
+            <a href="#about-section">About</a>
+            <a href="#projects-section">Projects</a>
+            <a href="#contact-section">Contact</a>
         </header>
-        <div class="about-section">
-            <div class="technologies">
-                <h1 class="title">technologies</h1>
-                <a class="tech-box"><img src="images/javascript-736400.svg" height="80" width="80">Javascript</p></a>
-                <a class="tech-box"><img src="images/postgresql-icon.svg" height="80" width="80">PostgreSQL</p></a>
-                <a class="tech-box"><img src="images/java-icon.svg" height="80" width="80">Java</p></a>
-                <a class="tech-box"><img src="images/unity3d-icon.svg" height="80" width="80">Unity</p></a>
-                <a class="tech-box"><img src="images/expressjs-icon.svg" height="80" width="80">Express</p></a>
-                <a class="tech-box"><img src="images/nodejs-icon.svg" height="80" width="80">Node.js</p></a>
-            </div>
+        <div id="about-section">
+            <aside class="technologies">
+                <h1 class="title secondary-title">technologies</h1>
+                <div class="tech-grid">
+                    <a class="tech-box"><img src="images/javascript-736400.svg" height="80" width="80">Javascript</p></a>
+                    <a class="tech-box"><img src="images/postgresql-icon.svg" height="80" width="80">PostgreSQL</p></a>
+                    <a class="tech-box"><img src="images/java-icon.svg" height="80" width="80">Java</p></a>
+                    <a class="tech-box"><img src="images/unity3d-icon.svg" height="80" width="80">Unity</p></a>
+                    <a class="tech-box"><img src="images/expressjs-icon.svg" height="80" width="80">Express</p></a>
+                    <a class="tech-box"><img src="images/nodejs-icon.svg" height="80" width="80">Node.js</p></a>
+                </div>
+            </aside>
             <div class="about-me">
-                <h1 class="title">
+                <h1 class="section-title">
                     About Me
                 </h1>
                 <p class="about-text">
@@ -32,32 +34,36 @@
                     I am a recent graduate from the University of California, Davis, and am eager to step foot in 
                     industry to collaborate and build. 
                 </p>
-                <a class="box-button"><img src="images/linkedin-icon-2.svg" height="40">LinkedIn</a> <br>
-                <a class="box-button"><img src="images/github-icon-1.svg" height="40">Github</a>
+                <a class="box-button" href="https://www.linkedin.com/in/timdiersing/" target="_blank"><img src="images/linkedin-icon-2.svg" height="40">LinkedIn</a> <br>
+                <a class="box-button" href="https://github.com/TimDiersing" target="_blank"><img src="images/github-icon-1.svg" height="40">Github</a>
             </div>
         </div>
-        <div class="projects-section">
-            <h2>Projects</h2>
-            <article>
-                <div>
+        <div id="projects-section">
+            <h2 class="section-title">Projects</h2>
+            <article class="project">
+                <div class="left-side">
                     <p>
                         Database-backed Express.js app for real estate agents. Allows clients to modify contents 
                         (listings, testimonials, posts, etc.) independently.
                     </p>
-                    <a>View Live</a>
-                    <a>View Code</a>
+                    <a class="box-button">View Live</a>
+                    <a class="box-button">View Code</a>
                 </div>
-                <div>
-                    <h3>Real Estate Express App</h3>
+                <div class="right-side">
+                    <h3 class="secondary-title">Real Estate Express App</h3>
                     <img src="images/RealestateThumb.jpg" width="400">
                 </div>
             </article>
         </div>
-        <div class="contact-section">
-            <h2>Contact</h2>
-            <a>tjdiersing@gmail.com</a>
-            <a>linkedIn</a>
-            <a>github</a>
+        <div id="contact-section">
+            <h2 class="section-title">Contact</h2>
+            <a class="box-button" href="mailto:tjdiersing@gmail.com">tjdiersing@gmail.com</a>
+            <a class="box-button" href="https://www.linkedin.com/in/timdiersing/" target="_blank"><img src="images/linkedin-icon-2.svg" height="40">LinkedIn</a>
+            <a class="box-button" href="https://github.com/TimDiersing" target="_blank"><img src="images/github-icon-1.svg" height="40">Github</a>
         </div>
+        <footer>
+            <h4>Timothy Diersing ©2025</h4>
+            <a href="#navbar" class="to-top"><img src="images/chevron-svgrepo-com.svg" width="30"></a>
+        </footer>
     </body>
 </html>
