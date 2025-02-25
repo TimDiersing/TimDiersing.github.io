@@ -178,9 +178,21 @@ body {
     margin: 20px 0;
 }
 
-.project .right-side img {
+.project .image-with-border {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid #000000;
     position: relative;
+    top: 10px;
+    left: 20px;
 }
+
+.project .image-with-border img {
+    position: relative;
+    top: -10px;
+    left: -15px;
+}
+
 
 /*____________CONTACT STYLE__________*/
 #contact-section {
