@@ -157,6 +157,7 @@ body {
 
 .project {
     display: flex;
+    margin-bottom: 10vh;
 }
 
 .project .left-side {
