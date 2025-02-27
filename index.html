@@ -62,6 +62,20 @@
             <article class="project">
                 <div class="left-side">
                     <p>
+                        Flappy Bird remake for learning purposes.
+                    </p>
+                    <a class="box-button" href="PixelBird.html">Play Game</a>
+                    <a class="box-button" href="https://github.com/TimDiersing/HiQ-game" target="_blank">View Code</a>
+                </div>
+                <div class="right-side">
+                    <h3 class="secondary-title">Pixel Bird</h3>
+                    <div class="image-with-border"><img src="images/ProjectThumbnails/PixelBirdThumb.png" width="250"></div>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="left-side">
+                    <p>
                         Simple Hi-Q puzzle game with movable camera.
                     </p>
                     <a class="box-button" href="Hi-Q.html">Play Game</a>
@@ -73,7 +87,6 @@
                 </div>
             </article>
 
-            <a class="box-button" href="PixelBird.html">Bird Game</a>
         </div>
         <div id="contact-section">
             <h2 class="section-title">Contact</h2>
@@ -85,5 +98,22 @@
             <h4>Timothy Diersing ©2025</h4>
             <a href="#navbar" class="to-top"><img src="images/chevron-svgrepo-com.svg" width="30"></a>
         </footer>
+        <script>
+            function indexedDBStuff () {
+                // Check for IndexedDB support:
+                if (!('indexedDB' in window)) {
+                  // Can't use IndexedDB
+                  console.log("This browser doesn't support IndexedDB");
+                  return;
+                } else {
+                  // Do IndexedDB stuff here:
+                  // ...
+                }
+              }
+              
+            // Run IndexedDB code:
+            indexedDBStuff();
+            console.log("This browser supports IndexedDB");
+        </script>
     </body>
 </html>
