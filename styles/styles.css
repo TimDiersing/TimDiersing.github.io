@@ -1,0 +1,214 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+:root
+{
+    --text-xs: 0.75rem;
+    --text-md: 1.2rem;
+    --text-lg: 1.5rem;
+    --text-xl: 3rem;
+    --text-vXL: clamp(2rem, 2vw + 2rem, 4rem);
+
+    --nav-width: 50px;
+    --nav-padding: 15px;
+}
+
+body 
+{
+   font-family: "Geo", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   background-color: #d6d9e6;
+
+   position: relative;
+   width: 100%;
+}
+
+/* nav style */
+#side-nav
+{
+    padding: var(--nav-padding);
+    width: var(--nav-width);
+    background: linear-gradient(to right, #b5b9ca7d, #9da0b0a2);
+    backdrop-filter: blur(5px);
+    /* border-right: 1px solid #2CE8F5;
+    box-shadow: 3px 0px 5px #2CE8F5;     */
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    overflow-x: hidden;
+    font-size: var(--text-md);
+
+    transition: width 0.15s ease-out;
+}
+
+#side-nav:hover
+{
+    width: 225px;
+}
+
+#side-nav .show-hover { display: none; }
+#side-nav:hover .show-hover { display: inline; }
+
+#side-nav .line
+{
+    background-color: #000;
+    width: 100%;
+    height: 1px;
+}
+#side-nav h2
+{
+    font-size: var(--text-md);
+    color: #00000080
+}
+
+#side-nav .icon
+{
+    border-radius: 2.5px;
+}
+#side-nav a 
+{
+    display: inline-flex;
+    gap: 25px;
+    width: 100%;
+    padding-right: 5px;
+    align-items: center;
+    text-wrap: nowrap;
+    justify-content: space-between;
+    background-color: clear;
+    text-decoration: none;
+    color: #000;
+
+    transition: all 0.2s ease;
+}
+#side-nav a:hover
+{
+    background-color: #b5b9ca;
+}
+
+.hide-span span
+{
+    display: none;
+}
+
+/* content */
+.content
+{
+    position: relative;
+    padding-left: calc(var(--nav-width) + (2 * var(--nav-padding)));
+    height: 100vh;
+}
+
+/* grid stuff */
+.main-grid
+{
+    width: 80%;
+    padding: 4vh 6%;
+    gap: 30px;
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "photo bio"
+    "photo socials";
+
+    font-size: var(--text-lg);
+}
+
+#title
+{
+    grid-area: title;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--text-vXL);
+}
+
+#title span
+{
+    color: #00000080;
+    font-size: var(--text-lg);
+}
+
+.main-grid img
+{
+    grid-area: photo;
+}
+
+.main-grid #bio
+{
+    grid-area: bio;
+}
+
+.socials
+{
+    grid-area: socials;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.social-button
+{
+    background-color: #DADADA;
+    box-shadow: 0px 2px 3px #00000050;
+    padding: 5px 10px;
+    height: 40px;
+    font-size: var(--text-md);
+    text-decoration: none;
+    text-align: right;
+    color: #000;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+
+    transition: all 0.05s ease-out;
+}
+
+.social-button:hover
+{
+    transform: translate(0px, -2px);
+    box-shadow: 0px 4px 3px #00000050;
+}
+
+.bottom-text
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: var(--text-lg);
+    bottom: 3vh;
+}
+
+/* hobby games*/
+#hobbies-text
+{
+    margin-left: 15px;
+    font-size: var(--text-lg);
+    font-weight: 400;
+}
+
+.hobby-games
+{
+    margin: 15px;
+    padding: 0 50px 0 50px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-color: #000 #d6d9e6;
+}
+
+.hobby-game 
+{
+    flex: 0 0 auto;
+    width: 500px;
+    height: 250px;
+}

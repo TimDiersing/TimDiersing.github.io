@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Timothy Diersing - Game Developer Portfolio</title>
+        <meta name="description" content="hi">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/hobbies.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="./images/logo.png" type="image/png">
+    </head>
+    <body>
+        <nav id="side-nav">
+            <a href="index.html" id="about-me">
+                <img src="./images/home.png" alt="home" width="50" height="50">
+                <span>Timothy Diersing</span>
+            </a>
+            <div class="line"></div>
+            <h2>Games</h2>
+            <a href="treasured_towers.html" class="game-nav">
+                <img class="icon" src="./images/logo.png" alt="treasured towers logo" width="50" height="50">
+                <span>Treasured Towers</span>
+            </a>
+            <a class="game-nav">
+                <img class="icon" src="./images/logo.png" alt="treasured towers logo" width="50" height="50">
+                <span>Sudoku Prisim</span>
+            </a>
+            <a class="game-nav">
+                <img class="icon" src="./images/logo.png" alt="treasured towers logo" width="50" height="50">
+                <span>Something else</span>
+            </a>
+        </nav>
+        <div class="content">
+            <div class="main-grid">
+                <h1 id="title">
+                    Timothy Diersing <span>Game Developer Portfolio</span>
+                </h1>
+                <img src="./images/logo.png" width="250" height="250">
+                <p id="bio">
+                    Hi, I&apos;m a Unity game developer and computer science graduate. 
+                    I&apos;ve been playing games my whole life and want to pass that 
+                    enjoyment onto others!
+                </p>
+                <div class="socials">
+                    <a class="social-button" href="mailto:tjdiersing@gmail.com">
+                        <img src="./images/mail.png" height="30" width="30">
+                        tjdiersing@gmail.com
+                    </a>
+                    <a class="social-button" href="https://www.linkedin.com/in/timdiersing/">
+                        <img src="./images/LI-In-Bug.png" height="30" width="35">
+                        linkedin
+                    </a>
+                </div>
+            </div>
+            <h2 id="hobbies-text">
+                Feel free to interact with my hobbies on the screen
+            </h2>
+            <div class="hobby-games">
+                <div class="hobby-game ball-game">
+                    <div class="ball"></div>
+                    <div class="paddle"></div>
+                </div>
+                <div class="hobby-game shooting-game">
+                    <div class="stats">
+                        <span class="stats-text">Targets hit: 2 Accuracy: 75%</span>
+                        <button class="reset-button">reset</button>
+                    </div>
+                    <div class="shooting-area"></div>
+                </div>
+                <div class="hobby-game piano-area">
+                    <div class="piano"></div>
+                </div>
+            </div>
+            <script src="./scripts/piano.js"></script>
+            <script src="./scripts/shooting_game.js"></script>
+            <script src="./scripts/ball_game.js"></script>
+            <script src="./scripts/game_controller.js"></script>
+        </div>
+    </body>
+</html>

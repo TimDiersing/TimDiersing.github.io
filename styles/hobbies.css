@@ -1,0 +1,149 @@
+/* piano */
+.piano-area
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.piano 
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: fit-content;
+    height: fit-content;
+    background-color: #ebebeb;
+
+    border-top: 3px solid #000;
+    border-radius: 2.5px 2.5px 0 0;
+}
+
+.white-key
+{
+    --keyWidth: 60px;
+    height: 200px;
+    position: relative;
+    width: var(--keyWidth);
+    background-color: #d8d8d8;
+    border-left: 0.5px solid #000;
+
+    border-radius: 0px 0px 2.5px 2.5px;
+    overflow: hidden;
+
+    transition: background-color 0.2s ease;
+}
+
+.white-key::after
+{
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 2.5px;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(#000, #d6d9e6);
+}
+
+.black-key
+{
+    width: 30px;
+    height: 110px;
+    position: absolute;
+    margin-left: auto;
+    background-color: #282726;
+    z-index: 1;
+    border-radius: 0 0 2.5px 2.5px;
+
+    transition: background-color 0.2s ease;
+}
+
+.white-key:hover
+{
+    background-color: #bcbbb9;
+}
+
+.black-key:hover
+{
+    background-color: #92908e;
+}
+
+
+/* shooting game */
+.shooting-game
+{
+    cursor: crosshair;
+}
+
+.shooting-game .stats
+{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.shooting-game .shooting-area
+{
+    position: relative;
+    background-color: #d1a362;
+    overflow: hidden;
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 0;
+}
+
+.shooting-game .reset-button
+{
+    border-radius: 0;
+    padding: 1px 4px;
+    font-family: "Geo", sans-serif;
+    background-color: #d2d1d0;
+}
+
+.shooting-game .reset-button:hover
+{
+    background-color: #adacab;
+}
+
+.shooting-game .target
+{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #000;
+    transition: all 0.2s ease;
+}
+
+.shooting-game .hit
+{
+    background-color: #b12a2a;
+    height: 6px !important;
+}
+
+/* ball game */
+.ball-game
+{
+    position: relative;
+    background-color: #92908e;
+
+    cursor: none;
+}
+
+.ball
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #000;
+    position: absolute;
+}
+
+.paddle
+{
+    width: 8px;
+    height: 30px;
+    border-radius: 0 50% 50% 0;
+    background-color: #000;
+    position: absolute;
+}
