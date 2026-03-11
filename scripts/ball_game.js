@@ -70,7 +70,7 @@ class BallGame
     getNextPaddlePos(dt){
         const paddleSpeed = 25;
         const adjMousePos = { 
-            x: this.mousePos.x - (this.paddleSize.width / 2), 
+            x: Math.min(this.mousePos.x - (this.paddleSize.width / 2), this.gameWindowSize.width / 2), 
             y: this.mousePos.y - (this.paddleSize.height / 2) 
         };
 
