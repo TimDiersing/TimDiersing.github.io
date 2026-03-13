@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <title>Timothy Diersing - Treasured Towers</title>
-        <meta name="description" content="hi">
+        <meta name="description" content="Tower defense and collecting game">
         <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/game_page.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
@@ -15,13 +16,13 @@
     </head>
     <body>
         <nav id="side-nav">
-            <a href="index.html" id="about-me">
-                <img src="./images/home.png" alt="home" width="50" height="50">
+            <a href="./index.html" id="about-me">
+                <img src="./images/home.svg" alt="home" width="50" height="50">
                 <span>Timothy Diersing</span>
             </a>
             <div class="line"></div>
             <h2>Games</h2>
-            <a href="treasured_towers.html" class="game-nav">
+            <a href="./treasured_towers.html" class="game-nav">
                 <img class="icon" src="./images/logo.png" alt="treasured towers logo" width="50" height="50">
                 <span>Treasured Towers</span>
             </a>
@@ -34,8 +35,37 @@
                 <span>Something else</span>
             </a>
         </nav>
-        <div class="content">
-            treasured towers
+        <div class="game-content">
+            <video controls width="300" height="600">
+
+            </video>
+            <div class="game-info">
+                <h1>Treasured Towers</h1>
+                <div class="game-desc">
+                    <h3>
+                        A solo developed mobile tower defense and collecting game. 
+                        With individual turret card leveling that increase stats, 
+                        unique upgrade trees per turret, and seperate player 
+                        progression with permanent upgrades.
+                    </h3>
+
+                    platform: iOS   
+                    Unity / C#
+
+                    <h3>Tech highlights:</h3>
+                    <ul>
+                        <li>Object pooling for performance</li>
+                        <li>Event-driven gameplay systems</li>
+                        <li>Save-data architecture / JSON serialization</li>
+                        <li>Mobile UI and responsive layouts</li>
+                        <li>App Store deployment pipeline</li>
+                    </ul>  
+                </div>
+            </div>
+            <div class="icon-and-link">
+                <img src="./images/logo.png">
+                <img src="./images/app-store.svg">
+            </div>
         </div>
     </body>
 </html>

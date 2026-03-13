@@ -13,6 +13,12 @@
 
     --nav-width: 50px;
     --nav-padding: 15px;
+
+    --color-primary: #292929;
+    --color-seconady: #b1b1b1;
+    --color-3: #868686;
+    --color-hover: rgb(91, 91, 91);
+    --color-glow: #2CE8F5;
 }
 
 body 
@@ -20,10 +26,22 @@ body
    font-family: "Geo", sans-serif;
    font-weight: 400;
    font-style: normal;
-   background-color: #d6d9e6;
+   min-height: 100vh;
+
+   background-color: var(--color-primary);
+   color: var(--color-seconady);
 
    position: relative;
-   width: 100%;
+}
+
+h1
+{
+    font-size: var(--text-vXL);
+}
+
+ul
+{
+    list-style-position: inside;
 }
 
 /* nav style */
@@ -31,11 +49,11 @@ body
 {
     padding: var(--nav-padding);
     width: var(--nav-width);
-    background: linear-gradient(to right, #b5b9ca7d, #9da0b0a2);
+    /* background: linear-gradient(to right, #b5b9ca7d, #9da0b0a2); */
     backdrop-filter: blur(5px);
-    /* border-right: 1px solid #2CE8F5;
-    box-shadow: 3px 0px 5px #2CE8F5;     */
-    height: 100%;
+    border-right: 1px solid var(--color-glow);
+    box-shadow: 3px 0px 5px var(--color-glow);
+    height: calc(100% - var(--nav-padding) * 2);
     position: absolute;
     z-index: 2;
 
@@ -59,14 +77,13 @@ body
 
 #side-nav .line
 {
-    background-color: #000;
+    background-color: var(--color-seconady);
     width: 100%;
     height: 1px;
 }
 #side-nav h2
 {
     font-size: var(--text-md);
-    color: #00000080
 }
 
 #side-nav .icon
@@ -84,13 +101,13 @@ body
     justify-content: space-between;
     background-color: clear;
     text-decoration: none;
-    color: #000;
+    color: var(--color-seconady);
 
     transition: all 0.2s ease;
 }
 #side-nav a:hover
 {
-    background-color: #b5b9ca;
+    background-color: var(--color-hover);
 }
 
 .hide-span span
@@ -102,15 +119,17 @@ body
 .content
 {
     position: relative;
-    padding-left: calc(var(--nav-width) + (2 * var(--nav-padding)));
-    height: 100vh;
+    margin-left: calc(var(--nav-width) + (2 * var(--nav-padding)));
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
 }
 
 /* grid stuff */
 .main-grid
 {
-    width: 80%;
-    padding: 4vh 6%;
     gap: 30px;
     display: grid;
     grid-template-areas: 
@@ -127,12 +146,11 @@ body
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    font-size: var(--text-vXL);
 }
 
 #title span
 {
-    color: #00000080;
+    color: var(--color-seconady);
     font-size: var(--text-lg);
 }
 
@@ -155,14 +173,14 @@ body
 
 .social-button
 {
-    background-color: #DADADA;
-    box-shadow: 0px 2px 3px #00000050;
+    background-color: #333333;
+    box-shadow: 0px 2px 3px var(--color-glow);
     padding: 5px 10px;
     height: 40px;
     font-size: var(--text-md);
     text-decoration: none;
     text-align: right;
-    color: #000;
+    color: var(--color-seconady);
 
     display: inline-flex;
     align-items: center;
@@ -175,7 +193,7 @@ body
 .social-button:hover
 {
     transform: translate(0px, -2px);
-    box-shadow: 0px 4px 3px #00000050;
+    box-shadow: 0px 4px 3px var(--color-glow);
 }
 
 .bottom-text
@@ -190,20 +208,17 @@ body
 /* hobby games*/
 #hobbies-text
 {
-    margin-left: 15px;
     font-size: var(--text-lg);
-    font-weight: 400;
 }
 
 .hobby-games
 {
-    margin: 15px;
-    padding: 0 50px 0 50px;
+    padding: 0 20px 0 20px;
     display: flex;
     gap: 60px;
     align-items: center;
     overflow-x: auto;
-    scrollbar-color: #000 #d6d9e6;
+    scrollbar-color: var(--color-seconady) var(--color-primary);
 }
 
 .hobby-game 

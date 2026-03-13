@@ -1,0 +1,7 @@
+.game-content
+{
+    margin-left: calc(var(--nav-width) + (2 * var(--nav-padding)));
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
