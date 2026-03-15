@@ -22,6 +22,20 @@
     gap: 20px;
 }
 
+.game-media video
+{
+    aspect-ratio: 6 / 13;
+    max-height: 68vh;
+}
+
+.game-media canvas
+{
+    aspect-ratio: 9 / 12;
+    height: 68vh;
+}
+
+/* 6 / 13 - video ar */
+
 .game-media a
 {
     max-width: 200px;
@@ -36,6 +50,19 @@
 .game-info
 {
     max-width: 700px;
+}
+
+.game-desc
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: var(--text-lg);
+}
+
+.no-list-symbol
+{
+    list-style-type: none;
 }
 
 @media (max-width: 800px)
