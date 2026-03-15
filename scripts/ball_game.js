@@ -7,7 +7,7 @@ class BallGame
 
     constructor()
     {
-        this.enabled = true;
+        this.enabled = false;
 
         this.gameWindow = document.querySelector(".ball-game");
         this.ball = document.querySelector(".ball-game .ball");
@@ -58,13 +58,13 @@ class BallGame
             this.mousePos.y = bb.height - (e.clientY - bb.top);
         });
 
-        // this.gameWindow.addEventListener("pointerenter", () => {
-        //     this.enable();
-        // });
+        this.gameWindow.addEventListener("pointerenter", () => {
+            this.enable();
+        });
 
-        // this.gameWindow.addEventListener("pointerleave", () => {
-        //     this.disable();
-        // });
+        this.gameWindow.addEventListener("pointerleave", () => {
+            this.disable();
+        });
     }
 
     getNextPaddlePos(dt){
@@ -172,7 +172,7 @@ class BallGame
 
     update(dt)
     {   
-        //if (this.enabled === false) { return; }
+        if (this.enabled === false) { return; }
 
         const nextBallPos = { 
             x: this.ballPos.x + (this.ballVelocty.x * dt), 

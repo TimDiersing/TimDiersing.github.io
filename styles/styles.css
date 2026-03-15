@@ -15,7 +15,7 @@
     --nav-padding: 15px;
 
     --color-primary: #292929;
-    --color-seconady: #b1b1b1;
+    --color-secondary: #b1b1b1;
     --color-3: #868686;
     --color-hover: rgb(91, 91, 91);
     --color-glow: #2CE8F5;
@@ -29,7 +29,7 @@ body
    min-height: 100vh;
 
    background-color: var(--color-primary);
-   color: var(--color-seconady);
+   color: var(--color-secondary);
 }
 
 h1
@@ -79,7 +79,7 @@ ul
 
 #title span
 {
-    color: var(--color-seconady);
+    color: var(--color-secondary);
     font-size: var(--text-lg);
 }
 
@@ -109,7 +109,7 @@ ul
     font-size: var(--text-md);
     text-decoration: none;
     text-align: right;
-    color: var(--color-seconady);
+    color: var(--color-secondary);
 
     display: inline-flex;
     align-items: center;
@@ -149,7 +149,7 @@ ul
     align-items: center;
     max-width: calc(100% - 40px);
     overflow-x: auto;
-    scrollbar-color: var(--color-seconady) var(--color-primary);
+    scrollbar-color: var(--color-secondary) var(--color-primary);
 }
 
 .hobby-game 
@@ -165,7 +165,7 @@ ul
     .content
     {
         margin-left: 0px;
-        margin-top: 60px;
+        margin-top: 0px;
         padding: 10px;
     }
 
@@ -194,10 +194,22 @@ ul
         flex-direction: column;
        
     }
-
     .hobby-game
     {
         width: 100%;
         height: auto;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) 
+{
+    #hobbies-text
+    {
+        display: none;
+    }
+
+    .hobby-games
+    {
+        display: none;
     }
 }

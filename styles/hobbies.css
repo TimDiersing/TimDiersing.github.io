@@ -86,7 +86,7 @@
 .shooting-game .shooting-area
 {
     position: relative;
-    background-color: #d1a362;
+    background-color: var(--color-secondary);
     overflow: hidden;
     width: 100%;
     height: 90%;
@@ -111,7 +111,7 @@
 {
     position: absolute;
     border-radius: 50%;
-    background-color: #000;
+    background-color: var(--color-primary);
     transition: all 0.2s ease;
 }
 
@@ -125,7 +125,7 @@
 .ball-game
 {
     position: relative;
-    background-color: #92908e;
+    background-color: var(--color-secondary);
 
     cursor: none;
 }
@@ -135,7 +135,7 @@
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background-color: #000;
+    background-color: var(--color-primary);
     position: absolute;
 }
 
@@ -144,6 +144,6 @@
     width: 8px;
     height: 30px;
     border-radius: 0 50% 50% 0;
-    background-color: #000;
+    background-color: var(--color-primary);
     position: absolute;
 }

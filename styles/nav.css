@@ -87,15 +87,17 @@
 {
     #side-nav
     {
-        width: calc(100% - var(--nav-padding) * 2);
+        width: calc(100% - 4px);
         top: 0px;
         left: 0px;
         border-right: none;
         height: auto;
+        padding: 2px;
+        position: sticky;
     }
 
     #side-nav:hover{
-        width: calc(100% - var(--nav-padding) * 2);
+        width: calc(100% - 4px);
     }
 
     .open-nav
@@ -103,6 +105,7 @@
         overflow: hidden;
         height: 275px;
         transition: height 0.2s ease;
+        padding: 5px 15px;
     }
 
     .closed

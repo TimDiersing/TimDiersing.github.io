@@ -8,7 +8,7 @@ function initialize()
     ballGame = new BallGame();
     shootingGame = new ShootingGame();
     
-    ballGame.enable();
+    //ballGame.enable();
     shootingGame.enable();
 
     setupPiano();
