@@ -7,6 +7,7 @@
         <title>Timothy Diersing - Sudoku Prisim</title>
         <meta name="description" content="Sudoku with a colorful twist">
         <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/nav.css">
         <link rel="stylesheet" href="./styles/game_page.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,20 +17,25 @@
     </head>
     <body>
         <nav id="side-nav">
-            <a href="./index.html" id="about-me">
-                <img src="./images/home.svg" alt="home" width="50" height="50">
-                <span>Timothy Diersing</span>
-            </a>
-            <div class="line"></div>
-            <h2>Games</h2>
-            <a href="./treasured_towers.html" class="game-nav">
-                <img class="icon" src="./images/tt_logo.png" alt="treasured towers logo" width="50" height="50">
-                <span>Treasured Towers</span>
-            </a>
-            <a href="./sudoku.html" class="game-nav">
-                <img class="icon" src="./images/SudokuPrisimLogo.png" alt="sudoku prisim logo" width="50" height="50">
-                <span>Sudoku Prisim</span>
-            </a>
+            <button class="menu-button">
+                <img src="./images/menu.svg" alt="menu" width="50" height="50">
+            </button>
+            <div class="open-nav closed">
+                <a href="./index.html" id="about-me">
+                    <img src="./images/home.svg" alt="home" width="50" height="50">
+                    <span>Timothy Diersing</span>
+                </a>
+                <div class="line"></div>
+                <h2>Games</h2>
+                <a href="./treasured_towers.html" class="game-nav">
+                    <img class="icon" src="./images/tt_logo.png" alt="treasured towers logo" width="50" height="50">
+                    <span>Treasured Towers</span>
+                </a>
+                <a href="./sudoku.html" class="game-nav">
+                    <img class="icon" src="./images/SudokuPrisimLogo.png" alt="sudoku prisim logo" width="50" height="50">
+                    <span>Sudoku Prisim</span>
+                </a>
+            </div>
         </nav>
         <h1 class="game-title">
             Sudoku Prisim
@@ -177,5 +183,6 @@
       document.body.appendChild(script);
 
     </script>
+    <script src="./scripts/nav.js"></script>
     </body>
 </html>

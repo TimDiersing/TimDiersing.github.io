@@ -67,8 +67,14 @@
 
 @media (max-width: 800px)
 {
+    .game-title
+    {
+        margin-left: 0;
+        margin-top: 60px;
+    }
     .game-content 
     {
         flex-direction: column;
+        margin-left: 0;
     }
 }

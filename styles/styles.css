@@ -30,8 +30,6 @@ body
 
    background-color: var(--color-primary);
    color: var(--color-seconady);
-
-   position: relative;
 }
 
 h1
@@ -42,77 +40,6 @@ h1
 ul
 {
     list-style-position: inside;
-}
-
-/* nav style */
-#side-nav
-{
-    padding: var(--nav-padding);
-    width: var(--nav-width);
-    /* background: linear-gradient(to right, #b5b9ca7d, #9da0b0a2); */
-    backdrop-filter: blur(5px);
-    border-right: 1px solid var(--color-glow);
-    box-shadow: 3px 0px 5px var(--color-glow);
-    height: calc(100% - var(--nav-padding) * 2);
-    position: absolute;
-    z-index: 2;
-
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: flex-start;
-    overflow-x: hidden;
-    font-size: var(--text-md);
-
-    transition: width 0.15s ease-out;
-}
-
-#side-nav:hover
-{
-    width: 225px;
-}
-
-#side-nav .show-hover { display: none; }
-#side-nav:hover .show-hover { display: inline; }
-
-#side-nav .line
-{
-    background-color: var(--color-seconady);
-    width: 100%;
-    height: 1px;
-}
-#side-nav h2
-{
-    font-size: var(--text-md);
-}
-
-#side-nav .icon
-{
-    border-radius: 2.5px;
-}
-#side-nav a 
-{
-    display: inline-flex;
-    gap: 25px;
-    width: 100%;
-    padding-right: 5px;
-    align-items: center;
-    text-wrap: nowrap;
-    justify-content: space-between;
-    background-color: clear;
-    text-decoration: none;
-    color: var(--color-seconady);
-
-    transition: all 0.2s ease;
-}
-#side-nav a:hover
-{
-    background-color: var(--color-hover);
-}
-
-.hide-span span
-{
-    display: none;
 }
 
 /* content */
@@ -230,4 +157,47 @@ ul
     flex: 0 0 auto;
     width: 500px;
     height: 250px;
+    aspect-ratio: 2 / 1;
+}
+
+@media (max-width: 800px)
+{
+    .content
+    {
+        margin-left: 0px;
+        margin-top: 60px;
+        padding: 10px;
+    }
+
+    .main-grid
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #title
+    {
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #hobbies-text
+    {
+        text-align: center;
+    }
+    .hobby-games
+    {
+        flex-direction: column;
+       
+    }
+
+    .hobby-game
+    {
+        width: 100%;
+        height: auto;
+    }
 }
