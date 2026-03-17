@@ -3,20 +3,19 @@
 {
     padding: var(--nav-padding);
     width: var(--nav-width);
-    /* background: linear-gradient(to right, #b5b9ca7d, #9da0b0a2); */
-    backdrop-filter: blur(5px);
-    
-    border-right: 1px solid var(--color-glow);
-    box-shadow: 3px 0px 5px var(--color-glow);
-    height: calc(100% - var(--nav-padding) * 2);
     position: absolute;
+    height: calc(100% - var(--nav-padding) * 2);
     z-index: 2;
+    border-right: 1px solid var(--color-glow);
+    
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
-
-    overflow-x: hidden;
+    
+    box-shadow: 3px 0px 5px var(--color-glow);
     font-size: var(--text-md);
-
+    backdrop-filter: blur(5px);
+    
     transition: all 0.15s ease-out;
 }
 

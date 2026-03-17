@@ -132,8 +132,8 @@
 
 .ball
 {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 20px;
     background-color: var(--color-primary);
     position: absolute;
@@ -146,4 +146,15 @@
     border-radius: 0 50% 50% 0;
     background-color: var(--color-primary);
     position: absolute;
+}
+
+.net
+{
+    width: 4px;
+    height: 30px;
+    border-radius: 2px 2px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 1px);
+    background-color: var(--color-primary);
 }

@@ -218,7 +218,7 @@ class BallGame
     }
 }
 
-// util funciont
+// util function
 function lerp(a,b,t) {
     return a + ((a - b) * t);
 }
